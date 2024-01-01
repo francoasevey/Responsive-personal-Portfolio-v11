@@ -327,11 +327,75 @@ body.dark-theme {
   font-weight: var(--font-semi-bold);
 }
 /*=============== SKILLS ===============*/
-
-
+.skills-container{
+  row-gap: 3.5rem;
+}
+.skills-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+.skills-title i{
+  font-size: 1rem;
+  font-weight: initial;
+}
+.skills-info,
+.skills-data,
+.skills-blob{
+  display: grid;
+}
+.skills-info{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem 2rem;
+}
+.skills-data{
+  justify-content: center;
+  text-align: center;
+}
+.skills-blob{
+  width: 80px;
+  height: 100px;
+  background-color: var(--container-color);
+  border-radius: 3rem;
+  place-items: center;
+  margin-bottom: 1rem;
+}
+.skills-blob img{
+  width: 40px;
+}
+.skills-name{
+  font-size: var(--small-font-size);
+  margin-bottom: .25rem;
+}
+.skills-subtitle{
+  font-size: var(--tiny-font-size);
+  color: var(--text-color-light);
+}
 /* Animation skills */
-
-
+.skills-blob:hover img{
+  animation: bounce-skills .6s;
+}
+@keyframes bounce-skills{
+  0%{
+    transform: translate(0);
+  }
+  20%{
+    transform: translateY(-6px);
+  }
+  40%{
+    transform: translate(0);
+  }
+  60%{
+    transform: translateY(-3px);
+  }
+  80%{
+    transform: translate(0);
+  }
+}
 /*=============== QUALIFICATION ===============*/
 
 
