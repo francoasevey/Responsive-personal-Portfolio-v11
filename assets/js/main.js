@@ -45,7 +45,13 @@ let swiperProjects = new Swiper(".projects-container", {
 });
 
 /*=============== SWIPER TESTIMONIAL ===============*/
-
+let swiperTestimonial = new Swiper(".testimonial-container", {
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 
 /*=============== EMAIL JS ===============*/
 
