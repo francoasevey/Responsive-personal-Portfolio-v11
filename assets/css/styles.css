@@ -502,7 +502,27 @@ body.dark-theme {
   margin-bottom: 1.25rem
 }
 .projects-subtitle{
-  font-size: ;
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.projects-title{
+  font-size: var(--h2-font-size);
+  margin-bottom: 1.25rem;
+  margin: .5rem 0 1.25rem;
+}
+.projects-button{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+.projects-button i{
+  font-size: 1rem;
+  transition: transform .3s;
+}
+.projects-button:hover i{
+  transform: translateX(.25rem);
 }
 
 /* Swiper class */
