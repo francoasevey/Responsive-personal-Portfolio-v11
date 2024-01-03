@@ -618,7 +618,42 @@ body.dark-theme {
 }
 
 /*=============== CONTACT ===============*/
-
+.contact-container{
+  row-gap: 3.5rem;
+}
+.contact-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 2.5rem;
+}
+.contact-title i{
+  font-size: 1rem;
+  font-weight: initial;
+}
+.contact-info,
+.contact-data,
+.contact-form{
+  display: grid;
+}
+.contact-info{
+  row-gap: 2rem;
+}
+.contact-data{
+  row-gap: .75rem;
+}
+.contact-data-title{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+.contact-data-info{
+  font-size: var(--small-font-size);
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
 
 /* Status color */
 
