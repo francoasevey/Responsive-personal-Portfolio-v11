@@ -489,7 +489,21 @@ body.dark-theme {
 }
 
 /*=============== PROJECTS ===============*/
-
+.projects-container{
+  overflow: initial;
+}
+.projects-content{
+  display: grid;
+  justify-content: center;
+}
+.projects-img{
+  width: 250px;
+  border-radius: .75rem;
+  margin-bottom: 1.25rem
+}
+.projects-subtitle{
+  font-size: ;
+}
 
 /* Swiper class */
 
