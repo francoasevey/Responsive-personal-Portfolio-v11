@@ -66,6 +66,19 @@ const sendEmail = (e) =>{
     if(contactName.value === '' || contactEmail.value === '' || contactProject.value === '' ){
         contactMessage.classList.remove('color-blue')
         contactMessage.classList.add("color-red")
+
+        contactMessage.textContent = 'Write all the input fields 📩'
+    } else{
+        emailjs.sendForm('service_dfkelqx','template_3u7fjz1','#contact-form','gHJm1AxQJVlXT2qQB')
+        .then(()=>{
+            
+            contactMessage.classList.add('color-blue')
+            contactMessage.textContent = 'Message sent ✅'
+
+            setTimeout(()=>{
+                contactMessage.textContent = ''
+            }, 5000)
+        })
     }
 
 }
