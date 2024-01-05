@@ -78,7 +78,13 @@ const sendEmail = (e) =>{
             setTimeout(()=>{
                 contactMessage.textContent = ''
             }, 5000)
+        }, (error) => {
+            alert('OPPS! SOMETHING HAS FAILED...', error)
         })
+
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
     }
 
 }
