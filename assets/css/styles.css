@@ -1145,5 +1145,50 @@ body.dark-theme {
   .testimonial-container .swiper-button-prev{
     left: calc(50% -5rem);
   }
-
+  .testimonial-container .swiper-button-next{
+    right: calc(50% - 5rem);
+  }
+  .testimonial-container .swiper-slide{
+    margin-bottom: 6rem;
+  }
+  .testimonial-description{
+    font-size: var(--h2-font-size);
+    margin-bottom: 2rem;
+  }
+  .testimonial-img{
+    width: 200px;
+    top: 13rem;
+    right: 4rem;
+  }
+  .contact-title{
+    margin-bottom: 3rem;
+  }
+  .contact-title i{
+    font-size: 1.25rem;
+  }
+  .contact-info{
+    row-gap: 3rem;
+  }
+  .contact-data-info{
+    font-size: var(--normal-font-size);
+  }
+  .contact-form{
+    row-gap: 2.5rem;
+  }
+  .footer-container{
+    padding: 4rem 0 3rem;
+  }
+  .footer-list{
+    column-gap: 3rem;
+    margin: 3rem 0;
+  }
+  .footer-social{
+    column-gap: 2rem;
+  }
+  .footer-social-link{
+    font-size: 1.5rem;
+  }
+  .footer-copy{
+    margin-top: 5rem;
+  }
 }

@@ -155,4 +155,16 @@ const scrollHeader = () =>{
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal(`.home-data, .projects-container, .testimonial-container`)
+sr.reveal(`.home-info-div`, {delay: 600, origin: 'bottom', interval: 100})
+sr.reveal(`.skills-content:nth-child(1), .contact-content:nth-child(1)`, {origin: 'left'})
+sr.reveal(`.skills-content:nth-child(2), .contact-content:nth-child(2)`, {origin: 'right'})
+sr.reveal(`.qualification-content, .services-card`, {interval: 100})
 
