@@ -149,7 +149,7 @@ body.dark-theme {
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
+  max-width: 1270px;
   margin-inline: 1.5rem;
 }
 
@@ -1006,5 +1006,79 @@ body.dark-theme {
   }
   .show-scroll{
     bottom: 5rem;
+  }
+  .bg-header{
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, .1);
+  }
+  .dark-theme .bg-header{
+    box-shadow: 0 6px 24px hsla(207, 24%, 8%, .6);
+  }
+}
+@media screen and (min-width: 1048px) {
+  .container{
+    margin-inline: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-border{
+    padding-bottom: 6rem;
+  }
+  .section-subtitle{
+    margin-bottom: 5rem;
+  }
+  .home-title{
+    font-size: var(--biggest-font-size);
+  }
+  .home-blob{
+    width: 400px;
+    height: 580px;
+    border-radius: 12.5rem;
+  }
+  .home-perfil{
+    width: 340px;
+    height: 520px;
+    border-radius: 10.6rem;
+  }
+  .home-perfil img{
+    width: 300px;
+  }
+  .home-shape-wawes{
+    width: 100px;
+    left: -4rem;
+    top: 10rem;
+  }
+  .home-shape-circle{
+    width: 250px;
+    bottom: -1rem;
+    right: -5rem;
+  }
+  .home-data{
+    row-gap: 2.5rem;
+  }
+  .home-social{
+    column-gap: 2rem;
+  }
+  .home-social-link{
+    font-size: 1.5rem;
+  }
+  .home-info{
+    grid-template-rows: repeat(3, 130px);
+    row-gap: 4rem;
+    margin-top: 16rem;
+  }
+  .skills-container{
+    column-gap: 10rem;
+  }
+  .skills-title{
+    margin-bottom: 3rem;
+  }
+  .skills-title i{
+    font-size: 1.25rem;
+  }
+  .skills-name{
+    font-size: var(--normal-font-size);
+  }
+  .skills-info{
+    gap: 3rem;
   }
 }
