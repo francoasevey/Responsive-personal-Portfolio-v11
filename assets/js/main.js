@@ -162,7 +162,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.home-data, .projects-container, .testimonial-container`)
+sr.reveal(`.home-data, .projects-container, .testimonial-container, .footer-container`)
 sr.reveal(`.home-info-div`, {delay: 600, origin: 'bottom', interval: 100})
 sr.reveal(`.skills-content:nth-child(1), .contact-content:nth-child(1)`, {origin: 'left'})
 sr.reveal(`.skills-content:nth-child(2), .contact-content:nth-child(2)`, {origin: 'right'})
